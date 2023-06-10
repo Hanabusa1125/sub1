@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>여기는어디?</title>
+        <!--초기화-->
+        <style>
+            * { margin: 0; padding: 0;}
+            body { 
+                font-family: sans-serif;
+                background: #F1F3F4;
+            }
+            li { list-style: none;}
+            a { text-decoration: none;}
+            img { border: 0;}
+            ::-webkit-scrollbar { display: none; }
+        </style>
+        <!--로고-->
+        <style>
+            #logo {
+                overflow: hidden;
+                float: left;
+                transition: all 0.1s linear;
+                width: 10%;
+                margin: 15px;
+                margin-top: 1%;
+                margin-left: 45%;
+            }
+            #logo:hover { 
+                transform: scale(1.1);
+                filter: drop-shadow(10px 10px 10px black);
+            }
+        </style>
+        <!--본문-->
+        <style>
+            p:first-letter { font-size: 30px;} 
+            p { font-family: 'Grandiflora One', serif;
+                font-weight: bold;
+                line-height: 360%;
+                margin-top: 5%;
+                text-align: center;
+                overflow: hidden;
+                clear: both;
+            }
+            a:link { 
+                color: blue;
+                transition : 1s;
+            }
+            a:hover {
+                color: orange;
+                background: black;
+                transition : 1s;
+                
+            }
+            a:visited { 
+                color: orange;
+                transition : 1s;               
+            }
+            .Kkal { font-family: 'Grandiflora One', serif;
+                font-weight: bold;
+                margin-left: 2%;
+                margin-bottom: 4%;
+                margin-top: 2%;
+                text-align: center;
+                overflow: hidden;
+                clear: both;
+            }
+        </style>
+        <!--유모아-->
+        <style>
+            input {
+                width:900px;
+                height:100px;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 20%;
+                margin-top: 10px;
+                border: none;
+                font-size: 150%;
+                background: #F1F3F4;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="C:/Users/HP/Desktop/Meat/meat.html"><img src="C:\Users\HP\Desktop\Meat\Resource\matzip1.png" alt="#" id="logo"></a>
+        </header>
+        <p>이곳은 고기에 관한 잡다한 정보를 정리해 놓은 사이트입니다. <br>
+            참고로 전문적이지는 않습니다. <br>
+            <a href="C:\Users\HP\Desktop\Meat\syuryu.html">고기의종류</a>버튼을 클릭하여 각 고기에 대한 정보를 들여다 보거나 <br> 
+            <a href="#">도움을받은것들</a>을 통해 어떠한 도움을 받았는지 살펴보실 수 있습니다. <br>
+            혹은... <br>여기서 저의 농담을 한가지 들으실수도 있죠</p>
+
+            <form name="search" id="search">
+                <input type="text" id="sc" name="sc" value="">
+            </form>
+                <script>
+                A=new Array();
+                A[0]="유모차를 타면 긴장되는 이유는?  /  애가타서"
+                A[1]="자동차가 울면?  /  잉카"
+                A[2]="높은곳에 사는 마녀가 강한 이유는?  /  위치에너지가 증가해서"
+                A[3]="자동차가 놀라면?  /  카놀라유"
+                A[4]="세상에서 제일 억울한 도형은?  / 원통"
+                A[5]="자동차를 '톡'하고 치면?  / 카톡"
+                rand = Math.floor( A.length * Math.random());
+                randText = A[rand];
+                search.sc.value = randText;
+                </script>
+
+        <div class="Kkal">깔깔...</div>
+        <audio src="C:\Users\HP\Desktop\Meat\temvill.mp3" id="music" controls autoplay loop
+            style="clear: both; overflow: hidden; margin-bottom: 10px; margin-left: 600px; margin-top: 20px;"></audio>
+    </body>
+</html>
