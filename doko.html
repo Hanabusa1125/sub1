@@ -7,7 +7,7 @@
             * { margin: 0; padding: 0;}
             body { 
                 font-family: sans-serif;
-                background: #F1F3F4;
+                background: rgb(154, 154, 154);
             }
             li { list-style: none;}
             a { text-decoration: none;}
@@ -20,10 +20,10 @@
                 overflow: hidden;
                 float: left;
                 transition: all 0.1s linear;
-                width: 10%;
+                width: 20%;
                 margin: 15px;
                 margin-top: 1%;
-                margin-left: 45%;
+                margin-left: 40%;
             }
             #logo:hover { 
                 transform: scale(1.1);
@@ -32,14 +32,16 @@
         </style>
         <!--본문-->
         <style>
-            p:first-letter { font-size: 30px;} 
+            p:first-letter { font-size: 40px;} 
             p { font-family: 'Grandiflora One', serif;
-                font-weight: bold;
-                line-height: 360%;
+                font-size: 150%;
+                line-height: 390%;
                 margin-top: 5%;
                 text-align: center;
                 overflow: hidden;
                 clear: both;
+                -webkit-text-stroke: 1px black;
+                
             }
             a:link { 
                 color: blue;
@@ -86,36 +88,33 @@
                 width: 1540px; height: 200px;
             }
         </style>
+        <!-- vid -->
+        <style>
+            #vid {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 120%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.5;
+            }
+        </style>
     </head>
     <body>
         <div id="leolbi">
         <header>
-            <a href="https://hanabusa1125.github.io/1234/meat.html"><img src="http://drive.google.com/uc?export=view&id=14B1i9tpJUjDTyifKAdovrCeZyhEr81WB" alt="#" id="logo"></a>
+            <a href="https://hanabusa1125.github.io/1234/meat.html"><img src="http://drive.google.com/uc?export=view&id=1BrTLjwlGSkTAoTJUg0JMoltAVWomSmKn" alt="#" id="logo"></a>
         </header>
         <p>이곳은 고기에 관한 잡다한 정보를 정리해 놓은 사이트입니다. <br>
             참고로 전문적이지는 않습니다. <br>
-            <a href="https://hanabusa1125.github.io/syuryu/syuryu.html">고기의종류</a>버튼을 클릭하여 각 고기에 대한 정보를 들여다보실 수 있습니다. <br> 
-            혹은... <br>여기서 저의 농담을 한가지 들으실수도 있죠</p>
+            <a href="https://hanabusa1125.github.io/syuryu/syuryu.html">고기의종류</a>버튼을 클릭하여 각 고기에 대한 정보를 들여다 보시거나<br> 
+            상단의 로고를 눌러 처음으로 돌아가실수도 있습니다.</p>
 
-            <form name="search" id="search">
-                <input type="text" id="sc" name="sc" value="">
-            </form>
-                <script>
-                A=new Array();
-                A[0]="유모차를 타면 긴장되는 이유는?  /  애가타서"
-                A[1]="자동차가 울면?  /  잉카"
-                A[2]="높은곳에 사는 마녀가 강한 이유는?  /  위치에너지가 증가해서"
-                A[3]="자동차가 놀라면?  /  카놀라유"
-                A[4]="세상에서 제일 억울한 도형은?  / 원통"
-                A[5]="자동차를 '톡'하고 치면?  / 카톡"
-                rand = Math.floor( A.length * Math.random());
-                randText = A[rand];
-                search.sc.value = randText;
-                </script>
 
-        <div class="Kkal">깔깔...</div>
-        <audio src="http://drive.google.com/uc?export=view&id=1dUp_F_4NYetj4jDMlqQZ9m-UI5AF-F5A" id="music" controls autoplay loop
-            style="clear: both; overflow: hidden; margin-bottom: 10px; margin-left: 600px; margin-top: 20px;"></audio>
+            <video id="vid" autoplay loop muted>
+                <source src="http://drive.google.com/uc?export=view&id=1fsy-7VeHdCYoB8FFiN3eQZX57112grSa">
+            </video>
         </div>
     </body>
 </html>
